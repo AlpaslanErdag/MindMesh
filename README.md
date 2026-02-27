@@ -1,3 +1,5 @@
+# <img src="assets/logo_n.png" width="500" align="center">
+
 # Multi-Agent Platform (MAP)
 
 A production-grade, full-stack Multi-Agent AI Platform built on 7 architectural pillars: **Orchestration**, **Specialized Agents**, **Hybrid Memory**, **Tool Sandboxing**, **Async Messaging**, **Observability + HITL**, and a **Real-Time Frontend**.
