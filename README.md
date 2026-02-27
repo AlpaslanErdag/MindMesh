@@ -5,7 +5,7 @@ MindMesh is a production-grade, full-stack Multi-Agent AI Platform built on 7 ar
 
 
 📸 Sightseeing (UI Preview)
-# <img src="assets/intro.png" width="600" align="center">
+# <img src="assets/intro.png" width="1200" align="center">
 
 ---
 
