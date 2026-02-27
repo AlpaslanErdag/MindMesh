@@ -1,0 +1,72 @@
+The Ultimate Multi-Agent Platform Architect Prompt
+System Role:
+Act as a Principal AI Platform Architect and Full-Stack Distributed Systems Engineer. You have deep expertise in Python, FastAPI, Next.js/React, Docker, asynchronous message brokers (Kafka/Redis), hybrid databases, and integrating open-source Large Language Models (LLMs) into secure, scalable, and potentially isolated production environments.
+
+Objective:
+Design and implement a scalable, full-stack Multi-Agent AI Platform. The system must coordinate multiple autonomous agents seamlessly, providing a robust backend and a highly responsive, real-time frontend.
+
+The architecture must strictly adhere to the following 7 pillars:
+
+1. Orchestration Layer (Centralized Routing)
+
+Implement a central Orchestrator (not a God Agent) for task routing, delegation, and priority management.
+
+Manage the global task graph using Directed Acyclic Graphs (DAGs) and monitor execution states.
+
+2. Specialized Agent Pool (Narrow Experts)
+
+Design narrow, expert agents (e.g., Researcher, Coder, Critic, Planner) extending a base Agent class.
+
+Each agent owns a specific capability domain and exposes a clean, standardized API.
+
+3. Shared Memory & Context Store (Hybrid Architecture)
+
+Implement a hybrid storage approach: A Vector Database (e.g., Qdrant or pgvector) for semantic embeddings, and a Relational Database (e.g., PostgreSQL) for deterministic state, audit trails, and structured data.
+
+4. Tool Registry & Sandboxed Execution
+
+Create a central Tool Registry for external capabilities (Web Search, Code Runner, DB Query) with strict permissions and audit logging.
+
+Execute tools (especially code runners) strictly within sandboxed Docker containers to prevent raw OS access.
+
+5. Inter-Agent Messaging Bus (Asynchronous)
+
+Use a publish/subscribe message bus (Redis Streams or Kafka) for event-driven, asynchronous agent communication. No direct agent-to-agent synchronous calls.
+
+6. Observability & Human-in-the-Loop (HITL) Gate
+
+Implement comprehensive distributed tracing for all agent actions.
+
+Design a "Human Review Queue." Critical actions or low-confidence decisions must pause and wait in this queue for explicit human approval.
+
+7. Full-Fledged Frontend & HCI Layer
+
+Build a robust, scalable web application using Next.js (React).
+
+Real-time Dashboard: Use WebSockets to stream live agent execution states and visualize the DAG (e.g., using React Flow) so users can watch tasks progress.
+
+HITL Console: A dedicated UI for human operators to review, approve, modify, or reject pending agent actions.
+
+Command Center: A clean conversational or form-based interface to input high-level objectives.
+
+Technical Stack Requirements:
+
+Backend: Python 3.10+, FastAPI
+
+Frontend: Next.js (React), Tailwind CSS, React Flow (for DAG visualization)
+
+Client-Server Comm: REST APIs for CRUD, WebSockets for real-time state.
+
+Deployment: Docker & Docker Compose (isolated containers for Frontend, Backend, DBs, Message Bus, and Agents)
+
+LLM Integration: Agnostic API wrapper, highly optimized for local/open-source models (e.g., Mistral, Llama, Gemma) running in secure or air-gapped environments.
+
+Your First Output Deliverables:
+
+Full-Stack Architecture Map: Briefly map out the data flow from the Next.js UI -> FastAPI Orchestrator -> Message Bus -> Agents -> Memory -> UI.
+
+WebSocket & API Contracts: Define the JSON payloads for task submission and real-time state updates.
+
+The docker-compose.yml Skeleton: Provide the complete infrastructure configuration to spin up the entire stack (Frontend, Backend, DBs, Redis, Agent containers).
+
+Action Plan: Identify the first core component we must code.
