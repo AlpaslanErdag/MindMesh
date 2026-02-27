@@ -1,8 +1,11 @@
 # <img src="assets/logo_n.png" width="500" align="center">
 
 # Multi-Agent Platform (MAP)
+MindMesh is a production-grade, full-stack Multi-Agent AI Platform built on 7 architectural pillars and a healthy amount of optimism. It turns complex objectives into a coordinated dance (or a polite mosh pit) of specialized agents.
 
-A production-grade, full-stack Multi-Agent AI Platform built on 7 architectural pillars: **Orchestration**, **Specialized Agents**, **Hybrid Memory**, **Tool Sandboxing**, **Async Messaging**, **Observability + HITL**, and a **Real-Time Frontend**.
+
+📸 Sightseeing (UI Preview)
+# <img src="assets/intro.png" width="500" align="center">
 
 ---
 
